@@ -18,7 +18,7 @@ public class KafkaApplication {
 		return args -> {
 			for (int i = 0; i < 100; i++) {
 
-				kafkaTemplate.send("pradeep","hello kafka:)");
+				kafkaTemplate.send("pradeep","hello kafka:)"+i);
 			}
 		};
 	}
